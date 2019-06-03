@@ -128,6 +128,9 @@ header nav a{
         width: 500px;
         margin: auto;
     }
+    .cta-text{
+        margin: 0;
+    }
     .cta-img{
         display: none;
     }
