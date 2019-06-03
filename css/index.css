@@ -72,9 +72,6 @@ h1, h2, h3, h4, h5 {
 @media (max-width: 500px) {
     .container{
         width: 500px;
-      /*  display: flex;
-        flex-direction: column;*/
-        background: #e5e5e5;
     }
 }
 header{
@@ -104,14 +101,15 @@ header nav a{
 @media (max-width: 500px) {
     header .logo{
         order: 1;
-        border-bottom: 1px solid black;
     }
     header nav{
         order: 2;
     }
-    header nav a {
+    header nav a, header a {
         border-bottom: 1px solid black;
-        margin: 7.2% auto;
+        margin: 3% auto;
+        width: 500px;
+        text-align: center;
     }
 }
 .cta{
@@ -127,7 +125,8 @@ header nav a{
 }
 @media (max-width: 500px) {
     .cta{
-        border-bottom: 1px solid black;
+        width: 500px;
+        margin: auto;
     }
     .cta-img{
         display: none;
