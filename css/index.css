@@ -69,11 +69,17 @@ h1, h2, h3, h4, h5 {
     width: 890px;
     margin: auto;
 }
+@media (max-width: 800px) {
+    .container{
+        width: 800px;
+    }
+}
 @media (max-width: 500px) {
     .container{
         width: 500px;
     }
 }
+
 header{
     display: flex;
     flex-direction: row;
@@ -82,6 +88,12 @@ header{
     justify-content: space-between;
     margin-bottom: 20px;
 }
+@media (max-width: 800px) {
+    header{
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 500px) {
     header{
         flex-direction: column;
@@ -98,6 +110,15 @@ header nav a{
     color: rgba(160, 138, 143, 0.65);
     font-weight: 800;
 }
+@media (max-width: 800px) and (min-width: 500px) {
+    header .logo{
+        order: 1;
+        margin: 0 0 15% 0;
+    }
+    header nav{
+        order: 2;
+    }
+}
 @media (max-width: 500px) {
     header .logo{
         order: 1;
@@ -107,7 +128,7 @@ header nav a{
     }
     header nav a, header a {
         border-bottom: 1px solid black;
-        margin: 3% auto;
+        padding: 2% ;
         width: 500px;
         text-align: center;
     }
@@ -122,6 +143,18 @@ header nav a{
 .cta-text{
     text-align: center;
     margin-right: 60px;
+}
+@media (max-width: 800px) {
+    .cta{
+        width: 800px;
+        margin: 7% 0 ;
+    }
+    .cta-text{
+        margin: 0;
+    }
+    .cta-img{
+        display: none;
+    }
 }
 @media (max-width: 500px) {
     .cta{
